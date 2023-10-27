@@ -1,0 +1,58 @@
+.container{
+    background-color: lightslategray;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    height: 60%;
+    width: 60%;
+    display: flex;
+    background-color: blue;
+    align-items: center;
+    justify-content: left;
+}
+
+.container-login{
+    background-color: red;
+    width: 40%;
+    height: 100%;
+    
+}
+
+.campos{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
+.campos-login{
+    background-color: orange;
+    margin-top: 20%;
+    padding: 5px;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.campo{
+    padding: 0.3rem;
+    margin: 0.2rem 0 0.8rem 0;
+}
+
+.opc{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    width: 40%;
+    margin: 0.5rem ;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: solid 1px;
+}
