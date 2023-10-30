@@ -1,5 +1,7 @@
+body{
+    overflow: hidden;
+}
 .container{
-    background-color: lightslategray;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -8,31 +10,71 @@
 }
 
 .login{
+    box-shadow: 0px 0px 40px -5px;
     height: 60%;
     width: 60%;
     display: flex;
-    background-color: blue;
+    background-color: rgba(119, 136, 153, 0.952);
     align-items: center;
     justify-content: left;
 }
+img{
+    background-size: cover;
+}
 
 .container-login{
-    background-color: red;
     width: 40%;
     height: 100%;
     
+    
+}
+
+.google{
+    background-color: red;
+    border: solid 1px;
+    border-radius: 3px;
+    color: white;
+}
+.fb{
+    background-color: rgb(46, 46, 218);
+    border: solid 1px;
+    border-radius: 3px;
+    color: white;
+}
+.telegram{
+    background-color: rgb(43, 43, 128);
+    border: solid 1px;
+    border-radius: 3px;
+    color: white;
 }
 
 .campos{
-    background-color: lightblue;
+    background-color: rgba(110, 126, 143, 0.699);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.esqueci{
+    text-align: center;
+}
+
+.esqueci a{
+    text-decoration: none;
+    color: black;
+}
+
+.esqueci a:hover{
+    color: lightgray;
 }
 
 .campos-login{
-    background-color: orange;
-    margin-top: 20%;
-    padding: 5px;
+    background-color: rgb(190, 158, 102);
+    margin-top: 10%;
+    border-radius: 1rem;
+    padding: 0.8rem;
     display: flex;
     width: 70%;
     justify-content: center;
@@ -50,9 +92,114 @@
 }
 
 .btn{
-    width: 40%;
+    width: 42%;
     margin: 0.5rem ;
-    padding: 0.5rem;
+    padding: 0.3rem;
     border-radius: 20px;
     border: solid 1px;
+    text-wrap: nowrap;
 }
+
+.entrar{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.btn-entrar{
+    width: 80%;
+    padding: 0.3rem;
+    margin-top: 0.2rem;
+
+}
+
+
+.direita{
+    width: 60%;
+    height: 100%;
+}
+
+.logo{
+    background-color: lightblue;
+    height: 80%;
+}
+
+.descricao{
+    width: 100%;
+    height: 20%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao h1{
+    font-size: 1.5em;
+    text-shadow: 0px 1px 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-entrar{
+    padding: 5px;
+}
+.btn-entrar svg{
+    height: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .direita {
+      display: none;
+    }
+    .login {
+        background-color: rgba(142, 149, 156, 0.438);
+        justify-content: center;
+    }
+    .campos{
+        background-color: rgba(0, 0, 0, 0.329);
+    }
+    .campos-login{
+        background-color: rgba(206, 206, 206, 0.61);
+        border-radius: 0px;
+        width: 100%;
+        margin-top: 4%;
+    }
+  }
+
+@media screen and (max-width: 425px) {
+    .direita {
+      display: none;
+    }
+    .login {
+        background-color: rgba(142, 149, 156, 0.438);
+        justify-content: center;
+        width: 100%;
+    }
+    .campos{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .campos-login{
+        background-color: rgba(206, 206, 206, 0.61);
+        border-radius: 10px;
+        width: 100%;
+    }
+    .opc {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        width: 100%;
+    }
+    .login {
+        background-color: rgba(142, 149, 156, 0);
+        height: 80%;
+    }
+    .entrar{
+        width: 100%;
+        padding: 1rem 0rem;
+    }
+  }
+
